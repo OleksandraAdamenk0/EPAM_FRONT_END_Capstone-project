@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Online Learning Platform</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+<header>
+    <h1>About Our Online Learning Platform</h1>
+</header>
+<main>
+    <section class="about-intro">
+        <h2>Who We Are</h2>
+        <p>We provide high-quality programming courses designed for all skill levels. Our mission is to make learning accessible and effective.</p>
+    </section>
+    <section class="instructors">
+        <h2>Meet Our Instructors</h2>
+        <div class="instructor-list" id="instructorList"></div>
+    </section>
+    <section class="contact" id="contactSection">
+        <h2>Contact Us</h2>
+    </section>
+</main>
+<footer id="footer">
+    <p></p>
+</footer>
+
+<script>
+    // Функция для заполнения списка инструкторов
+    function populateInstructors(structure) {
+        const instructorList = document.getElementById('instructorList');
+        structure.instructors.forEach(instructor => {
+            const instructorDiv = document.createElement('div');
+            instructorDiv.className = 'instructor';
+
+            instructorDiv.innerHTML = `
+                <img src="${instructor.photo}" alt="${instructor.name}">
+                <h3>${instructor.name}</h3>
+                <p>${instructor.biography}</p>
+            `;
+            instructorList.appendChild(instructorDiv);
+        });
+    }
+
+    // Функция для заполнения контактной информации
+    function populateContacts(structure) {
+        const contactSection = document.getElementById('contactSection');
+        const contacts = structure.contacts;
+
+        contactSection.innerHTML = `
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:${contacts.email}">${contacts.email}</a></p>
+            <p>Phone: ${contacts.phone}</p>
+            <p>Address: ${contacts.address}</p>
+        `;
+    }
+
+    // Функция для заполнения футера
+    function populateFooter() {
+        const footer = document.getElementById('footer');
+        const currentYear = new Date().getFullYear();
+        footer.innerHTML = `
+            <p>© ${currentYear} Online Learning Platform. All rights reserved.</p>
+        `;
+    }
+
+    // Загрузка JSON и вызов функций
+    async function loadData() {
+        try {
+            const response = await fetch('./data/courses.json'); // Путь к файлу
+            if (!response.ok) throw new Error('Network response was not ok');
+            const courses = await response.json();
+
+            populateInstructors(courses);
+            populateContacts(courses);
+            populateFooter();
+        } catch (error) {
+            console.error('Error loading JSON:', error);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadData);
+</script>
+</body>
+</html>

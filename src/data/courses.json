@@ -1,0 +1,374 @@
+{
+  "courses": [
+    {
+      "title": "Python Basics",
+      "description": "A course for beginners covering the basics of the Python language.",
+      "photo": "./images/courses/python_basics.jpg",
+      "level": "beginner",
+      "participants": 430,
+      "duration": "4 weeks",
+      "topics": [
+        "Introduction to Python",
+        "Variables and Data Types",
+        "Conditional Statements",
+        "Loops",
+        "Functions"
+      ],
+      "skills": [
+        "Writing simple Python programs",
+        "Understanding basic programming concepts"
+      ],
+      "instructors": ["Ivan Ivanov"]
+    },
+    {
+      "title": "Advanced Python",
+      "description": "A course for those who are already familiar with the basics of Python.",
+      "photo": "./images/courses/python_advanced.jpg",
+      "level": "advanced",
+      "participants": 543,
+      "duration": "6 weeks",
+      "topics": [
+        "Object-Oriented Programming",
+        "File Handling",
+        "Databases",
+        "Web Development with Flask"
+      ],
+      "skills": [
+        "Creating complex Python applications",
+        "Working with databases",
+        "Web development"
+      ],
+      "instructors": ["Ivan Ivanov", "Petr Petrov"]
+    },
+    {
+      "title": "JavaScript Web Development",
+      "description": "A course on creating web applications using JavaScript.",
+      "photo": "./images/courses/java_script.jpg",
+      "level": "beginner",
+      "participants": 1092,
+      "duration": "5 weeks",
+      "topics": [
+        "JavaScript Basics",
+        "DOM",
+        "AJAX",
+        "Frameworks"
+      ],
+      "skills": [
+        "Creating interactive web pages",
+        "Using JavaScript frameworks"
+      ],
+      "instructors": ["Anna Sidorova"]
+    },
+    {
+      "title": "Data Analysis with Pandas",
+      "description": "Learn how to analyze data using the Pandas library in Python.",
+      "photo": "./images/courses/intropandas.jpg",
+      "level": "intermediate",
+      "participants": 971,
+      "duration": "3 weeks",
+      "topics": [
+        "Introduction to Pandas",
+        "DataFrames and Series",
+        "Data Cleaning",
+        "Data Visualization"
+      ],
+      "skills": [
+        "Manipulating data with Pandas",
+        "Visualizing data trends"
+      ],
+      "instructors": ["Elena Smirnova"]
+    },
+    {
+      "title": "Machine Learning with Scikit-Learn",
+      "description": "An introduction to machine learning using Python's Scikit-Learn library.",
+      "photo": "./images/courses/scikit.png",
+      "level": "intermediate",
+      "participants": 312,
+      "duration": "4 weeks",
+      "topics": [
+        "Supervised Learning",
+        "Unsupervised Learning",
+        "Model Evaluation",
+        "Feature Engineering"
+      ],
+      "skills": [
+        "Building machine learning models",
+        "Evaluating model performance"
+      ],
+      "instructors": ["Elena Smirnova"]
+    },
+    {
+      "title": "Android App Development",
+      "description": "Learn to build Android applications using Java and Android Studio.",
+      "photo": "./images/courses/android.png",
+      "level": "beginner",
+      "participants": 234,
+      "duration": "5 weeks",
+      "topics": [
+        "Introduction to Android",
+        "User Interface Design",
+        "Activities and Intents",
+        "Data Storage"
+      ],
+      "skills": [
+        "Creating Android apps",
+        "Understanding Android architecture"
+      ],
+      "instructors": ["Dmitry Volkov"]
+    },
+    {
+      "title": "React for Beginners",
+      "description": "An introductory course to building web applications with React.",
+      "photo": "./images/courses/react.png",
+      "level": "beginner",
+      "participants": 755,
+      "duration": "4 weeks",
+      "topics": [
+        "Introduction to React",
+        "Components and Props",
+        "State and Lifecycle",
+        "Handling Events"
+      ],
+      "skills": [
+        "Building React components",
+        "Managing state in React"
+      ],
+      "instructors": ["Anna Sidorova"]
+    },
+    {
+      "title": "Python for Data Science",
+      "description": "A course on using Python for data science tasks.",
+      "photo": "./images/courses/python_data.jpg",
+      "level": "intermediate",
+      "participants": 421,
+      "duration": "5 weeks",
+      "topics": [
+        "Data Manipulation with Pandas",
+        "Data Visualization with Matplotlib",
+        "Statistical Analysis",
+        "Introduction to Machine Learning"
+      ],
+      "skills": [
+        "Performing data analysis",
+        "Visualizing data",
+        "Basic machine learning"
+      ],
+      "instructors": ["Ivan Ivanov", "Elena Smirnova"]
+    },
+    {
+      "title": "Introduction to SQL",
+      "description": "Learn the basics of SQL for database management.",
+      "photo": "./images/courses/sql.png",
+      "level": "beginner",
+      "participants": 865,
+      "duration": "3 weeks",
+      "topics": [
+        "Database Concepts",
+        "SELECT Statements",
+        "JOIN Operations",
+        "Aggregations"
+      ],
+      "skills": [
+        "Writing SQL queries",
+        "Understanding database relationships"
+      ],
+      "instructors": ["Petr Petrov"]
+    },
+    {
+      "title": "Web Scraping with Python",
+      "description": "A course on extracting data from websites using Python.",
+      "photo": "./images/courses/web_scraping.png",
+      "level": "intermediate",
+      "participants": 343,
+      "duration": "2 weeks",
+      "topics": [
+        "Introduction to Web Scraping",
+        "Using BeautifulSoup",
+        "Handling APIs",
+        "Ethical Considerations"
+      ],
+      "skills": [
+        "Extracting data from web pages",
+        "Working with APIs"
+      ],
+      "instructors": ["Ivan Ivanov"]
+    }
+  ],
+  "instructors": [
+    {
+      "name": "Ivan Ivanov",
+      "photo": "./icons/ivan.png",
+      "biography": "Ivan has 10 years of experience in Python development.",
+      "experience": "10 years",
+      "specialization": "Python",
+      "courses": ["Python Basics", "Advanced Python", "Python for Data Science", "Web Scraping with Python"]
+    },
+    {
+      "name": "Petr Petrov",
+      "photo": "./icons/petr.png",
+      "biography": "Petr is an expert in Python and machine learning.",
+      "experience": "8 years",
+      "specialization": "Python, machine learning",
+      "courses": ["Advanced Python", "Introduction to SQL"]
+    },
+    {
+      "name": "Anna Sidorova",
+      "photo": "./icons/anna.png",
+      "biography": "Anna specializes in front-end development.",
+      "experience": "5 years",
+      "specialization": "JavaScript, HTML, CSS",
+      "courses": ["JavaScript Web Development", "React for Beginners"]
+    },
+    {
+      "name": "Elena Smirnova",
+      "photo": "./icons/elena.png",
+      "biography": "Elena is an expert in data science and machine learning with 7 years of experience.",
+      "experience": "7 years",
+      "specialization": "Data Science, Machine Learning",
+      "courses": ["Data Analysis with Pandas", "Machine Learning with Scikit-Learn", "Python for Data Science"]
+    },
+    {
+      "name": "Dmitry Volkov",
+      "photo": "./icons/dmitry.png",
+      "biography": "Dmitry specializes in mobile development, particularly Android, with 6 years of experience.",
+      "experience": "6 years",
+      "specialization": "Mobile Development, Android",
+      "courses": ["Android App Development"]
+    }
+  ],
+  "reviews": [
+    {
+      "text": "Great Python course, everything is clear!",
+      "author": "Maria",
+      "course": "Python Basics"
+    },
+    {
+      "text": "The instructor explains complex topics very well.",
+      "author": "Alexey",
+      "course": "Advanced Python"
+    }
+  ],
+  "prices": {
+    "Python Basics": {
+      "price": 100,
+      "currency": "USD"
+    },
+    "Advanced Python": {
+      "price": 150,
+      "currency": "USD"
+    },
+    "JavaScript Web Development": {
+      "price": 120,
+      "currency": "USD"
+    },
+    "Data Analysis with Pandas": {
+      "price": 80,
+      "currency": "USD"
+    },
+    "Machine Learning with Scikit-Learn": {
+      "price": 120,
+      "currency": "USD"
+    },
+    "Android App Development": {
+      "price": 130,
+      "currency": "USD"
+    },
+    "React for Beginners": {
+      "price": 100,
+      "currency": "USD"
+    },
+    "Python for Data Science": {
+      "price": 110,
+      "currency": "USD"
+    },
+    "Introduction to SQL": {
+      "price": 70,
+      "currency": "USD"
+    },
+    "Web Scraping with Python": {
+      "price": 60,
+      "currency": "USD"
+    }
+  },
+  "schedule": [
+    {
+      "course": "Python Basics",
+      "day": "Wednesday",
+      "time": "18:00"
+    },
+    {
+      "course": "Advanced Python",
+      "day": "Friday",
+      "time": "19:00"
+    },
+    {
+      "course": "JavaScript Web Development",
+      "day": "Saturday",
+      "time": "10:00"
+    },
+    {
+      "course": "Data Analysis with Pandas",
+      "day": "Tuesday",
+      "time": "17:00"
+    },
+    {
+      "course": "Machine Learning with Scikit-Learn",
+      "day": "Thursday",
+      "time": "18:00"
+    },
+    {
+      "course": "Android App Development",
+      "day": "Monday",
+      "time": "19:00"
+    },
+    {
+      "course": "React for Beginners",
+      "day": "Wednesday",
+      "time": "16:00"
+    },
+    {
+      "course": "Python for Data Science",
+      "day": "Friday",
+      "time": "17:00"
+    },
+    {
+      "course": "Introduction to SQL",
+      "day": "Saturday",
+      "time": "11:00"
+    },
+    {
+      "course": "Web Scraping with Python",
+      "day": "Sunday",
+      "time": "14:00"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Do I need a computer for the course?",
+      "answer": "Yes, you need a computer with internet access."
+    },
+    {
+      "question": "Can I take the course at my own pace?",
+      "answer": "Yes, recordings of the classes are available at any time."
+    }
+  ],
+  "contacts": {
+    "address": "42 Programmers St.",
+    "phone": "+987654321",
+    "email": "courses@example.com"
+  },
+  "blog": [
+    {
+      "title": "Why You Should Learn Python",
+      "date": "2023-09-01",
+      "author": "Ivan Ivanov",
+      "text": "Python is one of the most popular programming languages..."
+    },
+    {
+      "title": "Trends in Web Development",
+      "date": "2023-09-10",
+      "author": "Anna Sidorova",
+      "text": "Web development is constantly evolving..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+$primary-color: #2c3e50
+$secondary-color: #3498db
+$text-color: #333
+$background-color: #f4f4f4
+
+body
+  font-family: Arial, sans-serif
+  background: $background-color
+  color: $text-color
+  margin: 0
+  padding: 0
+
+header
+  background: $primary-color
+  color: white
+  text-align: center
+  padding: 20px
+
+.about-intro, .instructors, .contact
+  max-width: 800px
+  margin: 20px auto
+  background: white
+  padding: 20px
+  border-radius: 8px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+
+h2
+  color: $primary-color
+
+.instructor-list
+  display: flex
+  gap: 20px
+  justify-content: center
+  flex-wrap: wrap
+
+.instructor
+  text-align: center
+  background: $secondary-color
+  color: white
+  padding: 15px
+  border-radius: 8px
+  width: 250px
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+
+  img
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    margin-bottom: 10px
+
+.contact a
+  color: $secondary-color
+  text-decoration: none
+  font-weight: bold
+
+footer
+  text-align: center
+  padding: 10px
+  background: $primary-color
+  color: white
+  margin-top: 20px
