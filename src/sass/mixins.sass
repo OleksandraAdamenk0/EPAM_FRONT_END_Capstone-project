@@ -1,3 +1,5 @@
+@use "constants" as *
+
 @mixin flex-row
   display: flex
   flex-direction: row
@@ -5,3 +7,17 @@
 @mixin flex-row-between
   @include flex-row
   justify-content: space-between
+
+@mixin option-style
+  padding: 12px 24px
+  background-color: $secondary-accent
+  text-transform: uppercase
+  color: $black
+  border-radius: 24px
+  cursor: pointer
+
+@mixin option-icon
+  font-weight: bold
+  font-size: 36px
+  cursor: pointer
+  color: $accent

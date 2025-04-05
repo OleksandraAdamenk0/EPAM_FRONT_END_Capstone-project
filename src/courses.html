@@ -41,11 +41,48 @@
 </div>
 
 <main>
+    <section class="search">
+        <label for="search"></label>
+        <input id="search" type="text" placeholder="Search courses..." autocomplete="off">
+        <i id="search-btn" class='bx bx-search-alt'></i>
+    </section>
+
+    <section class="sorting">
+        <i id="open-sorting-options" class='bx bx-sort-down'></i>
+        <div class="sorting-option inactive level-sorting">level</div>
+<!--        <div class="sorting-option inactive participants-sorting">participants</div>-->
+<!--        <div class="sorting-option inactive duration-sorting">duration</div>-->
+<!--        <div class="sorting-option inactive price-sorting">price</div>-->
+    </section>
+
+    <section class="filtering">
+        <i id="open-filtering-options" class='bx bx-filter-alt'></i>
+        <div class="filtering-option inactive level-filtering">
+            <p class="name">level</p>
+            <div class="options inactive">
+                <input type="checkbox" name="level" id="level-1" value="beginner" autocomplete="off" checked>
+                <label class="option" for="level-1">beginner</label>
+                <input type="checkbox" name="level" id="level-2" value="intermediate" autocomplete="off" checked>
+                <label class="option" for="level-2">intermediate</label>
+                <input type="checkbox" name="level" id="level-3" value="advanced" autocomplete="off" checked>
+                <label class="option" for="level-3">advanced</label>
+            </div>
+
+        </div>
+    </section>
+
     <section class="course-list">
         <h2>Explore Our Courses</h2>
         <div class="courses" id="courses-container">
         </div>
     </section>
+
+    <section class="pagination">
+        <i id="previous" class='bx bxs-left-arrow-circle'></i>
+        <p class="current-page" id="current-page-container"><span id="current-page"></span> page of <span id="all-pages"></span></p>
+        <i id="next" class='bx bxs-right-arrow-circle'></i>
+    </section>
+
 </main>
 <footer>
     <p>© 2025 Online Learning Platform. All rights reserved.</p>

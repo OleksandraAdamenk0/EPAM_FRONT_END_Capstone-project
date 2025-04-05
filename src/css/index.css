@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   display: flex;
   flex-direction: row;
@@ -11,6 +12,10 @@ header {
   border-bottom-right-radius: 2em;
   position: relative;
   z-index: 10;
+}
+
+header a i, header .btn i, header .card .social-media-btn i, .card header .social-media-btn i {
+  color: white;
 }
 
 header .mobile {
@@ -151,7 +156,7 @@ header #burger-menu {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: white;
+  color: #333333;
 }
 
 h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt, dd, a, .btn, .card .social-media-btn, button {
@@ -267,6 +272,65 @@ main h1, main p, main a, main .btn, main .card .social-media-btn, .card main .so
 main h1 {
   text-align: center;
   margin: 1em;
+}
+
+.about-platform {
+  padding: 3rem;
+  background: #f4f4f4;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.about-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-content ul li {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.about-content ul li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+}
+
+.highlighted-course {
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlighted-course h3 {
+  margin-bottom: 0.5rem;
+}
+
+.highlighted-course p {
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #7f81e3;
+  color: #333333;
+  margin-top: 20px;
 }
 
 

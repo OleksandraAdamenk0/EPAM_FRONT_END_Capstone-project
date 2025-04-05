@@ -1,6 +1,7 @@
 {
   "courses": [
     {
+      "id": "1",
       "title": "Python Basics",
       "description": "A course for beginners covering the basics of the Python language.",
       "photo": "./images/courses/python_basics.jpg",
@@ -21,6 +22,7 @@
       "instructors": ["Ivan Ivanov"]
     },
     {
+      "id": "2",
       "title": "Advanced Python",
       "description": "A course for those who are already familiar with the basics of Python.",
       "photo": "./images/courses/python_advanced.jpg",
@@ -41,6 +43,7 @@
       "instructors": ["Ivan Ivanov", "Petr Petrov"]
     },
     {
+      "id": "3",
       "title": "JavaScript Web Development",
       "description": "A course on creating web applications using JavaScript.",
       "photo": "./images/courses/java_script.jpg",
@@ -60,6 +63,7 @@
       "instructors": ["Anna Sidorova"]
     },
     {
+      "id": "4",
       "title": "Data Analysis with Pandas",
       "description": "Learn how to analyze data using the Pandas library in Python.",
       "photo": "./images/courses/intropandas.jpg",
@@ -79,6 +83,7 @@
       "instructors": ["Elena Smirnova"]
     },
     {
+      "id": "5",
       "title": "Machine Learning with Scikit-Learn",
       "description": "An introduction to machine learning using Python's Scikit-Learn library.",
       "photo": "./images/courses/scikit.png",
@@ -98,6 +103,7 @@
       "instructors": ["Elena Smirnova"]
     },
     {
+      "id": "6",
       "title": "Android App Development",
       "description": "Learn to build Android applications using Java and Android Studio.",
       "photo": "./images/courses/android.png",
@@ -117,6 +123,7 @@
       "instructors": ["Dmitry Volkov"]
     },
     {
+      "id": "7",
       "title": "React for Beginners",
       "description": "An introductory course to building web applications with React.",
       "photo": "./images/courses/react.png",
@@ -136,6 +143,7 @@
       "instructors": ["Anna Sidorova"]
     },
     {
+      "id": "8",
       "title": "Python for Data Science",
       "description": "A course on using Python for data science tasks.",
       "photo": "./images/courses/python_data.jpg",
@@ -156,6 +164,7 @@
       "instructors": ["Ivan Ivanov", "Elena Smirnova"]
     },
     {
+      "id": "9",
       "title": "Introduction to SQL",
       "description": "Learn the basics of SQL for database management.",
       "photo": "./images/courses/sql.png",
@@ -175,6 +184,7 @@
       "instructors": ["Petr Petrov"]
     },
     {
+      "id": "10",
       "title": "Web Scraping with Python",
       "description": "A course on extracting data from websites using Python.",
       "photo": "./images/courses/web_scraping.png",
@@ -192,6 +202,68 @@
         "Working with APIs"
       ],
       "instructors": ["Ivan Ivanov"]
+    },
+    {
+      "id": "11",
+      "title": "Advanced JavaScript",
+      "description": "Deep dive into JavaScript for experienced developers.",
+      "photo": "./images/courses/advanced_js.jpeg",
+      "level": "advanced",
+      "participants": 512,
+      "duration": "4 weeks",
+      "topics": [
+        "Asynchronous JavaScript",
+        "Advanced Object-Oriented Programming",
+        "Functional Programming in JavaScript",
+        "JavaScript Design Patterns"
+      ],
+      "skills": [
+        "Working with asynchronous code",
+        "Mastering JavaScript OOP",
+        "Implementing design patterns in JavaScript"
+      ],
+      "instructors": ["Elena Smirnova", "Petr Petrov"]
+    },
+    {
+      "id": "12",
+      "title": "React.js for Beginners",
+      "description": "An introduction to building web apps with React.js.",
+      "photo": "./images/courses/react.png",
+      "level": "beginner",
+      "participants": 920,
+      "duration": "6 weeks",
+      "topics": [
+        "React Basics",
+        "Working with Components",
+        "State and Props",
+        "Handling Events in React"
+      ],
+      "skills": [
+        "Building user interfaces with React",
+        "Working with React components",
+        "Managing state and props"
+      ],
+      "instructors": ["Ivan Ivanov"]
+    },
+    {
+      "id": "13",
+      "title": "Machine Learning with TensorFlow",
+      "description": "Learn to build machine learning models using TensorFlow.",
+      "photo": "./images/courses/tensorflow_ml.png",
+      "level": "advanced",
+      "participants": 650,
+      "duration": "8 weeks",
+      "topics": [
+        "Introduction to TensorFlow",
+        "Building Neural Networks",
+        "Deep Learning Algorithms",
+        "Model Optimization and Tuning"
+      ],
+      "skills": [
+        "Building machine learning models with TensorFlow",
+        "Optimizing neural networks"
+      ],
+      "instructors": ["Dmitry Volkov"]
     }
   ],
   "instructors": [
@@ -287,6 +359,18 @@
     },
     "Web Scraping with Python": {
       "price": 60,
+      "currency": "USD"
+    },
+    "Advanced JavaScript": {
+      "price": 80,
+      "currency": "USD"
+    },
+    "React.js for Beginners": {
+      "price": 100,
+      "currency": "USD"
+    },
+    "Machine Learning with TensorFlow": {
+      "price": 120,
       "currency": "USD"
     }
   },

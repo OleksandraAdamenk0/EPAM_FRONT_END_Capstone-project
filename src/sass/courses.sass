@@ -1,4 +1,5 @@
 @use "constants" as *
+@use "mixins" as *
 @use "header" as *
 
 body
@@ -62,7 +63,7 @@ h2
     transform: scale(1.05)
 
   &:hover .info
-    background-color: rgba(25, 25, 25, 0.7)
+    background-color: rgba(25, 25, 25, 0.9)
     display: block
 
   &:hover img
@@ -76,7 +77,7 @@ h2
   img
     width: 300px
     height: 300px
-    //scaling
+    object-fit: cover
 
   h3
     color: $secondary-accent
@@ -92,4 +93,122 @@ footer
   text-align: center
   padding: 10px
   margin-top: 20px
+
+.search
+  width: min(420px, 80vw)
+  margin: 0 auto
+  padding: 24px
+  display: flex
+  align-items: center
+
+  label
+    width: 0
+
+  input[type="text"]
+    width: 100%
+    max-width: 400px
+    padding: 12px 16px
+    font-size: 16px
+    border: 2px solid #ccc
+    border-radius: 10px
+    background-color: #f9f9f9
+    transition: 0.3s ease
+    outline: none
+
+  input[type="text"]:focus
+      border-color: $accent
+      background-color: #fff
+      box-shadow: 0 0 8px rgba(106, 90, 205, 0.3)
+
+  i
+    color: $accent
+    margin-left: 12px
+    font-size: 36px
+
+  i:hover
+    color: #4d33b8
+
+
+.error-search::placeholder
+  color: #d50a2e
+
+.sorting
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  width: min(420px, 80vw)
+  margin: 0 auto
+  column-gap: 24px
+  row-gap: 12px
+
+  i
+    @include option-icon
+
+  .sorting-option
+    @include option-style
+
+  .sorting-option:hover
+    background-color: $accent
+
+.filtering
+  display: flex
+  flex-direction: column
+  width: min(420px, 80vw)
+  margin: 0 auto
+  gap: 12px
+
+  i
+    @include option-icon
+
+.filtering-option
+  .name
+    @include option-style
+    width: fit-content
+
+    &:hover
+      background-color: $accent
+
+.options
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  width: min(420px, 80vw)
+  row-gap: 12px
+  column-gap: 24px
+
+  input
+    display: none
+
+  label
+    @include option-style
+    background-color: $background-color
+    border: 1px solid $accent
+    &:hover
+      background-color: $accent
+
+  input[type="checkbox"]:checked + label
+    background-color: $secondary-accent
+    border: 1px solid $secondary-accent
+
+    &:hover
+      background-color: $accent
+
+.pagination
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  width: min(420px, 80vw)
+  margin: 0 auto
+  gap: 12px
+
+  i
+    @include option-icon
+    color: $secondary-accent
+
+    &:hover
+      color: $accent
+
+.inactive
+  display: none !important
 

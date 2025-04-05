@@ -12,6 +12,9 @@ header {
   position: relative;
   z-index: 10;
 }
+header a i {
+  color: white;
+}
 header .mobile {
   display: none;
 }
