@@ -1,74 +1,3 @@
-.slider {
-  max-width: 100vw;
-  height: 50vh;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  cursor: pointer;
-}
-
-.course img {
-  width: 100vw;
-  height: 50vh;
-  flex-shrink: 0;
-}
-
-@keyframes slideLeft {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: white;
-}
-
-h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt, dd, a, .btn, .card .social-media-btn, button {
-  font-family: Roboto, sans-serif;
-}
-
-.cover {
-  height: 80vh;
-  width: 100%;
-  gap: 10vh;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-size: cover;
-  background-image: url("../images/cover.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.cover::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80vh;
-  background: rgba(0, 0, 0, 0.29);
-}
-
-a, .btn, .card .social-media-btn {
-  box-sizing: border-box;
-  display: block;
-  text-decoration: none;
-  color: white;
-}
-
-.btn, .card .social-media-btn {
-  width: fit-content;
-  padding: 8px 24px;
-  border-radius: 1em;
-  transition: ease-in-out 0.2s;
-}
-
 header {
   display: flex;
   flex-direction: row;
@@ -195,6 +124,77 @@ header #burger-menu {
     gap: 24px;
   }
 }
+.slider {
+  max-width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+
+.course img {
+  width: 100vw;
+  height: 50vh;
+  flex-shrink: 0;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt, dd, a, .btn, .card .social-media-btn, button {
+  font-family: Roboto, sans-serif;
+}
+
+.cover {
+  height: 80vh;
+  width: 100%;
+  gap: 10vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background: rgba(0, 0, 0, 0.29);
+}
+
+a, .btn, .card .social-media-btn {
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.btn, .card .social-media-btn {
+  width: fit-content;
+  padding: 8px 24px;
+  border-radius: 1em;
+  transition: ease-in-out 0.2s;
+}
+
 .card {
   width: min(94vw, 560px);
   background-color: #f4f4f4;
@@ -206,7 +206,7 @@ header #burger-menu {
 }
 
 .card h1, .card p, .card a, .card .btn, .card .social-media-btn {
-  color: #000013;
+  color: rgb(25, 25, 25);
 }
 
 .card .slogan {
@@ -245,7 +245,7 @@ header #burger-menu {
 }
 
 .card .social-media-btn i {
-  color: #000013;
+  color: rgb(25, 25, 25);
 }
 
 .card .social-media-btn:hover {
@@ -261,7 +261,7 @@ main {
 }
 
 main h1, main p, main a, main .btn, main .card .social-media-btn, .card main .social-media-btn {
-  color: #000013;
+  color: rgb(25, 25, 25);
 }
 
 main h1 {

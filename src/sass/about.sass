@@ -1,7 +1,5 @@
-$primary-color: #2c3e50
-$secondary-color: #3498db
-$text-color: #333
-$background-color: #f4f4f4
+@use "constants" as *
+@use "header" as *
 
 body
   font-family: Arial, sans-serif
@@ -10,9 +8,25 @@ body
   margin: 0
   padding: 0
 
-header
-  background: $primary-color
+a
+  box-sizing: border-box
+  display: block
+  text-decoration: none
   color: white
+
+.btn
+  @extend a
+  width: fit-content
+  padding: 8px 24px
+  border-radius: 1em
+  transition: ease-in-out 0.2s
+
+.cover
+  background-color: $accent
+
+.second-header
+  background: $accent
+  color: $text-color
   text-align: center
   padding: 20px
 
@@ -25,7 +39,7 @@ header
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
 
 h2
-  color: $primary-color
+  color: $black
 
 .instructor-list
   display: flex
@@ -35,8 +49,8 @@ h2
 
 .instructor
   text-align: center
-  background: $secondary-color
-  color: white
+  background: $secondary-accent
+  color: $text-color
   padding: 15px
   border-radius: 8px
   width: 250px
@@ -49,13 +63,13 @@ h2
     margin-bottom: 10px
 
 .contact a
-  color: $secondary-color
+  color: $accent
   text-decoration: none
   font-weight: bold
 
 footer
   text-align: center
   padding: 10px
-  background: $primary-color
-  color: white
+  background: $accent
+  color: $text-color
   margin-top: 20px

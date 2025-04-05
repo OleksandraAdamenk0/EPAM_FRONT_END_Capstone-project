@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Online Learning Platform</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
-<header>
-    <h1>About Our Online Learning Platform</h1>
-</header>
+<div class="cover">
+    <header>
+        <input type="checkbox" name="burger" id="burger-menu">
+        <label class="mobile burger" for="burger-menu"><i id='burger-img' class='bx bx-menu'></i></label>
+        <label class="mobile cross" for="burger-menu"><i id='cross-img' class='bx bx-x'></i></label>
+
+        <img class="logo-img" src="" alt="logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+            <a class="btn mobile" href="about.html#contactSection">Contact us
+                <i class='bx bx-right-arrow-alt dark'></i>
+            </a>
+        </nav>
+
+        <a class="btn desktop" href="about.html">Contact us
+            <i class='bx bx-right-arrow-alt dark'></i>
+        </a>
+
+        <div class="spaceholder mobile"></div>
+    </header>
+    <div class="second-header">
+        <h1>About Our Online Learning Platform</h1>
+    </div>
+</div>
+
 <main>
     <section class="about-intro">
         <h2>Who We Are</h2>
@@ -26,62 +55,6 @@
 <footer id="footer">
     <p></p>
 </footer>
-
-<script>
-    // Функция для заполнения списка инструкторов
-    function populateInstructors(structure) {
-        const instructorList = document.getElementById('instructorList');
-        structure.instructors.forEach(instructor => {
-            const instructorDiv = document.createElement('div');
-            instructorDiv.className = 'instructor';
-
-            instructorDiv.innerHTML = `
-                <img src="${instructor.photo}" alt="${instructor.name}">
-                <h3>${instructor.name}</h3>
-                <p>${instructor.biography}</p>
-            `;
-            instructorList.appendChild(instructorDiv);
-        });
-    }
-
-    // Функция для заполнения контактной информации
-    function populateContacts(structure) {
-        const contactSection = document.getElementById('contactSection');
-        const contacts = structure.contacts;
-
-        contactSection.innerHTML = `
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:${contacts.email}">${contacts.email}</a></p>
-            <p>Phone: ${contacts.phone}</p>
-            <p>Address: ${contacts.address}</p>
-        `;
-    }
-
-    // Функция для заполнения футера
-    function populateFooter() {
-        const footer = document.getElementById('footer');
-        const currentYear = new Date().getFullYear();
-        footer.innerHTML = `
-            <p>© ${currentYear} Online Learning Platform. All rights reserved.</p>
-        `;
-    }
-
-    // Загрузка JSON и вызов функций
-    async function loadData() {
-        try {
-            const response = await fetch('./data/courses.json'); // Путь к файлу
-            if (!response.ok) throw new Error('Network response was not ok');
-            const courses = await response.json();
-
-            populateInstructors(courses);
-            populateContacts(courses);
-            populateFooter();
-        } catch (error) {
-            console.error('Error loading JSON:', error);
-        }
-    }
-
-    document.addEventListener('DOMContentLoaded', loadData);
-</script>
+<script src="js/about.js"></script>
 </body>
 </html>

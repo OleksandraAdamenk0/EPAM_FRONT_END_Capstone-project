@@ -1,0 +1,92 @@
+@use "constants" as *
+@use "mixins" as *
+
+header
+  @include flex-row-between
+  background: rgba(0, 0, 0, 0.5)
+  margin: 0 auto
+  padding: 16px 24px
+  width: 94vw
+  align-items: center
+  border-bottom-left-radius: 2em
+  border-bottom-right-radius: 2em
+  position: relative
+  z-index: 10
+
+  .mobile
+    display: none
+    @media (max-width: $mobile)
+      display: block
+
+  .desktop
+    @media (max-width: $mobile)
+      display: none
+
+  img
+    width: 64px
+    height: 64px
+    @media (max-width: $mobile)
+      width: 48px
+      height: 48px
+
+  .btn
+    border: 1px solid white
+    display: flex
+    align-items: center
+    gap: 8px
+    padding-right: 16px
+    &:hover
+      padding-right: 12px
+      gap: 12px
+
+  nav
+    @include flex-row
+
+    @media(max-width: $mobile)
+      display: none
+
+    @media (min-width: $mobile)
+      flex-direction: row
+      gap: 24px
+      ul
+        @include flex-row
+        gap: 24px
+
+    .btn
+      display: none
+
+    ul
+      @include flex-row
+      gap: 24px
+      list-style: none
+
+  #cross-img,
+  #burger-img
+    position: relative
+    z-index: 10
+    display: none
+    font-size: 3em
+    @media (max-width: $mobile)
+      display: block
+
+  #burger-menu
+    display: none
+  @media (max-width: $mobile)
+    #burger-menu
+      &:checked ~ label.burger
+        display: none
+      &:checked ~ label.cross
+        display: block
+      &:not(:checked) ~ label.burger
+        display: block
+      &:not(:checked) ~ label.cross
+        display: none
+
+      &:checked ~ nav
+        display: block
+        flex-direction: column
+        gap: 36px
+
+        ul
+          flex-direction: column
+          gap: 24px

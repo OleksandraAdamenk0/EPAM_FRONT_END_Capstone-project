@@ -1,13 +1,148 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  padding: 16px 24px;
+  width: 94vw;
+  align-items: center;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  position: relative;
+  z-index: 10;
+}
+header .mobile {
+  display: none;
+}
+@media (max-width: 564px) {
+  header .mobile {
+    display: block;
+  }
+}
+@media (max-width: 564px) {
+  header .desktop {
+    display: none;
+  }
+}
+header img {
+  width: 64px;
+  height: 64px;
+}
+@media (max-width: 564px) {
+  header img {
+    width: 48px;
+    height: 48px;
+  }
+}
+header .btn {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-right: 16px;
+}
+header .btn:hover {
+  padding-right: 12px;
+  gap: 12px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 564px) {
+  header nav {
+    display: none;
+  }
+}
+@media (min-width: 564px) {
+  header nav {
+    flex-direction: row;
+    gap: 24px;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+header nav .btn {
+  display: none;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  list-style: none;
+}
+header #cross-img,
+header #burger-img {
+  position: relative;
+  z-index: 10;
+  display: none;
+  font-size: 3em;
+}
+@media (max-width: 564px) {
+  header #cross-img,
+  header #burger-img {
+    display: block;
+  }
+}
+header #burger-menu {
+  display: none;
+}
+@media (max-width: 564px) {
+  header #burger-menu:checked ~ label.burger {
+    display: none;
+  }
+  header #burger-menu:checked ~ label.cross {
+    display: block;
+  }
+  header #burger-menu:not(:checked) ~ label.burger {
+    display: block;
+  }
+  header #burger-menu:not(:checked) ~ label.cross {
+    display: none;
+  }
+  header #burger-menu:checked ~ nav {
+    display: block;
+    flex-direction: column;
+    gap: 36px;
+  }
+  header #burger-menu:checked ~ nav ul {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #f4f4f4;
 }
 
-header {
-  background-color: #333;
+a, .btn {
+  box-sizing: border-box;
+  display: block;
+  text-decoration: none;
   color: white;
+}
+
+.btn {
+  width: fit-content;
+  padding: 8px 24px;
+  border-radius: 1em;
+  transition: ease-in-out 0.2s;
+}
+
+.cover {
+  background-color: #7f81e3;
+}
+
+.second-header {
+  background-color: #7f81e3;
+  color: rgb(25, 25, 25);
   padding: 20px;
   text-align: center;
 }
@@ -16,48 +151,65 @@ header {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  background: white;
+  background-color: #f4f4f4;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   text-align: center;
-  color: #333;
+  color: #1b1b1b;
 }
 
 .courses {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 24px;
   padding: 20px;
 }
 
 .course {
-  padding-top: 220px;
-  border-radius: 8px;
+  border-radius: 16px;
+  height: 300px;
+  overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.2s;
-  background-size: cover;
-  background-position: center;
-  height: 200px;
+  position: relative;
 }
 .course:hover {
   transform: scale(1.05);
 }
+.course:hover .info {
+  background-color: rgba(25, 25, 25, 0.7);
+  display: block;
+}
+.course:hover img {
+  filter: grayscale(100%);
+}
+.course .info {
+  position: absolute;
+  display: none;
+  bottom: 0;
+}
+.course img {
+  width: 300px;
+  height: 300px;
+}
 .course h3 {
-  color: #ffffff;
+  color: #b1b2ec;
   margin-top: 10px;
 }
 .course p {
-  color: #d5d5d5;
+  color: #b1b2ec;
   margin: 5px 0;
 }
 
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #7f81e3;
+  color: rgb(25, 25, 25);
   text-align: center;
   padding: 10px;
   margin-top: 20px;

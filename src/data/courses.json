@@ -197,7 +197,7 @@
   "instructors": [
     {
       "name": "Ivan Ivanov",
-      "photo": "./icons/ivan.png",
+      "photo": "./images/icons/ivan.png",
       "biography": "Ivan has 10 years of experience in Python development.",
       "experience": "10 years",
       "specialization": "Python",
@@ -205,7 +205,7 @@
     },
     {
       "name": "Petr Petrov",
-      "photo": "./icons/petr.png",
+      "photo": "./images/icons/petr.png",
       "biography": "Petr is an expert in Python and machine learning.",
       "experience": "8 years",
       "specialization": "Python, machine learning",
@@ -213,7 +213,7 @@
     },
     {
       "name": "Anna Sidorova",
-      "photo": "./icons/anna.png",
+      "photo": "./images/icons/anna.png",
       "biography": "Anna specializes in front-end development.",
       "experience": "5 years",
       "specialization": "JavaScript, HTML, CSS",
@@ -221,7 +221,7 @@
     },
     {
       "name": "Elena Smirnova",
-      "photo": "./icons/elena.png",
+      "photo": "./images/icons/elena.png",
       "biography": "Elena is an expert in data science and machine learning with 7 years of experience.",
       "experience": "7 years",
       "specialization": "Data Science, Machine Learning",
@@ -229,7 +229,7 @@
     },
     {
       "name": "Dmitry Volkov",
-      "photo": "./icons/dmitry.png",
+      "photo": "./images/icons/dmitry.png",
       "biography": "Dmitry specializes in mobile development, particularly Android, with 6 years of experience.",
       "experience": "6 years",
       "specialization": "Mobile Development, Android",
@@ -353,9 +353,10 @@
     }
   ],
   "contacts": {
-    "address": "42 Programmers St.",
-    "phone": "+987654321",
-    "email": "courses@example.com"
+    "email": "info.courses@gmail.com",
+    "phone": "+1 (212) 555-0198",
+    "address": "350 5th Ave, New York, NY 10118, USA",
+    "mapQuery": "350 5th Ave, New York, NY 10118"
   },
   "blog": [
     {

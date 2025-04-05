@@ -4,101 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses - Online Learning Platform</title>
-    <link rel="stylesheet" href="css/courses.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/courses.css">
 </head>
 <body>
-<header>
-    <h1>Our Courses</h1>
-</header>
+
+<div class="cover">
+    <header>
+        <input type="checkbox" name="burger" id="burger-menu">
+        <label class="mobile burger" for="burger-menu"><i id='burger-img' class='bx bx-menu'></i></label>
+        <label class="mobile cross" for="burger-menu"><i id='cross-img' class='bx bx-x'></i></label>
+
+        <img class="logo-img" src="" alt="logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+            <a class="btn mobile" href="about.html#contactSection">Contact us
+                <i class='bx bx-right-arrow-alt dark'></i>
+            </a>
+        </nav>
+
+        <a class="btn desktop" href="about.html">Contact us
+            <i class='bx bx-right-arrow-alt dark'></i>
+        </a>
+
+        <div class="spaceholder mobile"></div>
+    </header>
+    <div class="second-header">
+        <h1>Our Courses</h1>
+    </div>
+</div>
+
 <main>
     <section class="course-list">
         <h2>Explore Our Courses</h2>
-        <div class="courses">
-            <div class="course" style='background-image: url("./images/courses/python_basics.jpg")'>
-                <h3>Python Basics</h3>
-                <p>A course for beginners covering the basics of the Python language.</p>
-                <p><strong>Level:</strong> Beginner</p>
-                <p><strong>Duration:</strong> 4 weeks</p>
-                <p><strong>Instructor:</strong> Ivan Ivanov</p>
-                <p><strong>Price:</strong> $100 USD</p>
-            </div>
-            <div class="course" style='background-image: url("./images/courses/python_advanced.jpg");'>
-                <h3>Advanced Python</h3>
-                <p>A course for those who are already familiar with the basics of Python.</p>
-                <p><strong>Level:</strong> Advanced</p>
-                <p><strong>Duration:</strong> 6 weeks</p>
-                <p><strong>Instructors:</strong> Ivan Ivanov, Petr Petrov</p>
-                <p><strong>Price:</strong> $150 USD</p>
-            </div>
-            <div class="course" style='background-image: url("./images/courses/java_script.jpg");'>
-                <h3>JavaScript Web Development</h3>
-                <p>A course on creating web applications using JavaScript.</p>
-                <p><strong>Level:</strong> Beginner</p>
-                <p><strong>Duration:</strong> 5 weeks</p>
-                <p><strong>Instructor:</strong> Anna Sidorova</p>
-                <p><strong>Price:</strong> $120 USD</p>
-            </div>
-            <div class="course" style='background-image: url("./images/courses/intropandas.jpg");'>
-                <h3>Data Analysis with Pandas</h3>
-                <p>Learn how to analyze data using the Pandas library in Python.</p>
-                <p><strong>Level:</strong> Intermediate</p>
-                <p><strong>Duration:</strong> 3 weeks</p>
-                <p><strong>Instructor:</strong> Elena Smirnova</p>
-                <p><strong>Price:</strong> $80 USD</p>
-            </div>
-            <div class="course" style='background-image: url("./images/courses/scikit.png");'>
-                <h3>Machine Learning with Scikit-Learn</h3>
-                <p>An introduction to machine learning using Python's Scikit-Learn library.</p>
-                <p><strong>Level:</strong> Intermediate</p>
-                <p><strong>Duration:</strong> 4 weeks</p>
-                <p><strong>Instructor:</strong> Elena Smirnova</p>
-                <p><strong>Price:</strong> $120 USD</p>
-            </div>
-            <div class="course" style='background-image: url("./images/courses/android.png");'>
-                <h3>Android App Development</h3>
-                <p>Learn to build Android applications using Java and Android Studio.</p>
-                <p><strong>Level:</strong> Beginner</p>
-                <p><strong>Duration:</strong> 5 weeks</p>
-                <p><strong>Instructor:</strong> Dmitry Volkov</p>
-                <p><strong>Price:</strong> $130 USD</p>
-            </div>
-            <div class="course" style='background-image: url("./images/courses/react.png");'>
-                <h3>React for Beginners</h3>
-                <p>An introductory course to building web applications with React.</p>
-                <p><strong>Level:</strong> Beginner</p>
-                <p><strong>Duration:</strong> 4 weeks</p>
-                <p><strong>Instructor:</strong> Anna Sidorova</p>
-                <p><strong>Price:</strong> $100 USD</p>
-            </div>
-            <div class="course" style='background-image: url("./images/courses/python_data.jpg");'>
-                <h3>Python for Data Science</h3>
-                <p>A course on using Python for data science tasks.</p>
-                <p><strong>Level:</strong> Intermediate</p>
-                <p><strong>Duration:</strong> 5 weeks</p>
-                <p><strong>Instructors:</strong> Ivan Ivanov, Elena Smirnova</p>
-                <p><strong>Price:</strong> $110 USD</p>
-            </div>
-            <div class="course" style='background-image: url("./images/courses/sql.png");'>
-                <h3>Introduction to SQL</h3>
-                <p>Learn the basics of SQL for database management.</p>
-                <p><strong>Level:</strong> Beginner</p>
-                <p><strong>Duration:</strong> 3 weeks</p>
-                <p><strong>Instructor:</strong> Petr Petrov</p>
-                <p><strong>Price:</strong> $70 USD</p>
-            </div>
-            <div class="course" style='background-image: url("./images/courses/web_scraping.png");'>
-                <h3>Web Scraping with Python</h3>
-                <p>A course on extracting data from websites using Python.</p>
-                <p><strong>Level:</strong> Intermediate</p>
-                <p><strong>Duration:</strong> 2 weeks</p>
-                <p><strong>Instructor:</strong> Ivan Ivanov</p>
-                <p><strong>Price:</strong> $60 USD</p>
-            </div>
+        <div class="courses" id="courses-container">
         </div>
     </section>
 </main>
 <footer>
-    <p>&copy; 2025 Online Learning Platform. All rights reserved.</p>
+    <p>© 2025 Online Learning Platform. All rights reserved.</p>
 </footer>
+
+<script src="./js/courses.js"></script>
 </body>
 </html>
