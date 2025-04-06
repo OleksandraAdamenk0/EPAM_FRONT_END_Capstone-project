@@ -146,7 +146,7 @@ header #burger-menu {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #333333;
+  color: #333;
 }
 
 h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt, dd, a, .btn, .card .social-media-btn, button {
@@ -256,7 +256,7 @@ main h1 {
 .about-platform {
   padding: 3rem;
   background: #f4f4f4;
-  color: #333333;
+  color: #333;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -308,7 +308,7 @@ footer {
   text-align: center;
   padding: 10px;
   background: #7f81e3;
-  color: #333333;
+  color: #333;
   margin-top: 20px;
 }
 

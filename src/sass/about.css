@@ -121,7 +121,7 @@ header #burger-menu {
 body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
-  color: #333333;
+  color: #333;
   margin: 0;
   padding: 0;
 }
@@ -146,7 +146,7 @@ a, .btn {
 
 .second-header {
   background: #7f81e3;
-  color: #333333;
+  color: #333;
   text-align: center;
   padding: 20px;
 }
@@ -174,7 +174,7 @@ h2 {
 .instructor {
   text-align: center;
   background: #b1b2ec;
-  color: #333333;
+  color: #333;
   padding: 15px;
   border-radius: 8px;
   width: 250px;
@@ -197,7 +197,7 @@ footer {
   text-align: center;
   padding: 10px;
   background: #7f81e3;
-  color: #333333;
+  color: #333;
   margin-top: 20px;
 }
 

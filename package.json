@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "compile": "sass src/sass:src/css --no-source-map",
+    "lint:js": "eslint src/js",
+    "lint:scss": "stylelint 'src/sass/*.sass'",
+    "lint": "npm run lint:js && npm run lint:scss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,6 +18,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.86.1"
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "sass": "^1.86.3",
+    "stylelint": "^16.18.0",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-scss": "^6.11.1"
   }
 }
