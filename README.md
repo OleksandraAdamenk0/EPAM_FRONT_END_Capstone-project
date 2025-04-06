@@ -31,7 +31,7 @@ Make sure the following are installed on your machine:
     Clone the repository using Git:
     
     ```
-    git clone https://autocode.git.epam.com/adamsaleksa/capstone-project-template.git
+    git@github.com:OleksandraAdamenk0/EPAM_FRONT_END_Capstone-project.git
     ```
 
 2. Go to the project directory and install dependencies
